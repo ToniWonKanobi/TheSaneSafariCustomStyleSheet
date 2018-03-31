@@ -15,7 +15,7 @@ $darkerGray: darken(gray, 35%)
 // I added a class of `toni` to all of the websites I administer, so that I could exclude them from this custom style sheet
 html:not(.toni)
   // I find that it's necessary to also style <table>'s because if a website is still using <table>'s, their styles probably suck big A as well
-  body, table
+  body:not(.wrap), table
     // No font fallbacks here because if you're using Safari on a Mac, you have Avenir
     font-family: Avenir !important
     font-weight: 500 !important
@@ -54,22 +54,21 @@ html:not(.toni)
     padding: 1em !important
     border-radius: 0.4em !important
     border: 0.1em solid $darkGray !important
+    tab-size: 2 !important
 
   code
     padding: 0.15em !important
 
   // Yes, I have to have this to prevent the <code> within <pre> from having double styling wonkiness
-  pre code,
   // Some websites put text that is literally semantically <code> into <span>'s for some reason, so that's why I had to do this
-  pre span, span span
+  pre code,
+  pre span,
+  pre span > span
     border: none !important
     padding: initial !important
     background-color: $lightGray !important
 
-//////////////////////////
-// Site-specific things //
-//////////////////////////
-
+  // Site-specific things 
   // GitHub
   .page-edit-blob, .CodeMirror
     pre
@@ -108,7 +107,6 @@ html:not(.toni)
 
   // CSS-Tricks
   .all-site-wrap
-    // This is because CSS-Tricks uses those cool little <pre> labels for whatever type of code is featured in the <pre> block
     pre code
       padding-top: 2rem !important
       background-color: initial !important
