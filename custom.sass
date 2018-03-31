@@ -15,7 +15,7 @@ $darkerGray: darken(gray, 35%)
 // I added a class of `toni` to all of the websites I administer, so that I could exclude them from this custom style sheet
 html:not(.toni)
   // I find that it's necessary to also style <table>'s because if a website is still using <table>'s, their styles probably suck big A as well
-  body:not(.wrap), table
+  body:not(.wrap):not(.settings.logged-in.not-team), table
     // No font fallbacks here because if you're using Safari on a Mac, you have Avenir
     font-family: Avenir !important
     font-weight: 500 !important

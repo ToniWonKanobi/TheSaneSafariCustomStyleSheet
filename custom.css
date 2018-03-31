@@ -1,1 +1,91 @@
-html:not(.toni) body:not(.wrap),html:not(.toni) table{font-family:Avenir !important;font-weight:500 !important;font-size:1.1em !important;line-height:1.6 !important;text-transform:none !important;text-align:initial !important;letter-spacing:initial !important;color:initial !important}html:not(.toni) i,html:not(.toni) em{font-weight:500 !important}html:not(.toni) b,html:not(.toni) strong{font-weight:700 !important}html:not(.toni) font{font-family:Avenir !important;font-weight:500 !important;font-size:1.1em !important}html:not(.toni) h1,html:not(.toni) h2,html:not(.toni) h3,html:not(.toni) h4,html:not(.toni) h5{font-family:Avenir Next !important;font-weight:700 !important}html:not(.toni) pre,html:not(.toni) code{font-family:Operator Mono SSm,Monaco,monospace !important;font-size:80% !important;color:#404040 !important;background-color:#ededed !important;padding:1em !important;border-radius:.4em !important;border:.1em solid #cbcbcb !important;tab-size:2 !important}html:not(.toni) code{padding:.15em !important}html:not(.toni) pre code,html:not(.toni) pre span,html:not(.toni) pre span>span{border:none !important;padding:initial !important;background-color:#ededed !important}html:not(.toni) .page-edit-blob pre,html:not(.toni) .CodeMirror pre{color:initial !important;background-color:initial !important;padding:initial !important;border-radius:initial !important;border:initial !important}html:not(.toni) ytd-app{font-size:110% !important;background-color:#272727 !important}html:not(.toni) ytd-app a#video-title.yt-simple-endpoint.style-scope.ytd-grid-video-renderer{font-weight:700 !important}html:not(.toni) ytd-app div#metadata-container.grid.style-scope.ytd-grid-video-renderer{font-weight:500 !important}html:not(.toni) #content.content-container,html:not(.toni) .Main-content,html:not(.toni) .site-content.container,html:not(.toni) .singleton{max-width:650px !important;margin:auto !important;padding:1em !important;letter-spacing:initial !important}html:not(.toni) #mastheadbackground{height:185px !important;margin-bottom:-185px !important}html:not(.toni) .all-site-wrap pre code{padding-top:2rem !important;background-color:initial !important}html:not(.toni) #kottke-org{font-size:200% !important}html:not(.toni) .text-container{text-align:center}html:not(.toni) body>pre{font-size:65% !important;background-color:initial !important;padding:.5em !important;border:initial !important;border-radius:none !important;tab-size:2 !important}
+html:not(.toni) body:not(.wrap):not(.settings.logged-in.not-team), html:not(.toni) table {
+  font-family: Avenir !important;
+  font-weight: 500 !important;
+  font-size: 1.1em !important;
+  line-height: 1.6 !important;
+  text-transform: none !important;
+  text-align: initial !important;
+  letter-spacing: initial !important;
+  color: initial !important; }
+
+html:not(.toni) i, html:not(.toni) em {
+  font-weight: 500 !important; }
+
+html:not(.toni) b, html:not(.toni) strong {
+  font-weight: 700 !important; }
+
+html:not(.toni) font {
+  font-family: Avenir !important;
+  font-weight: 500 !important;
+  font-size: 1.1em !important; }
+
+html:not(.toni) h1, html:not(.toni) h2, html:not(.toni) h3, html:not(.toni) h4, html:not(.toni) h5 {
+  font-family: Avenir Next !important;
+  font-weight: 700 !important; }
+
+html:not(.toni) pre, html:not(.toni) code {
+  font-family: Operator Mono SSm, Monaco, monospace !important;
+  font-size: 80% !important;
+  color: #404040 !important;
+  background-color: #edecec !important;
+  padding: 1em !important;
+  border-radius: 0.4em !important;
+  border: 0.1em solid #cbcbcb !important;
+  -moz-tab-size: 2 !important;
+    -o-tab-size: 2 !important;
+       tab-size: 2 !important; }
+
+html:not(.toni) code {
+  padding: 0.15em !important; }
+
+html:not(.toni) pre code,
+html:not(.toni) pre span,
+html:not(.toni) pre span > span {
+  border: none !important;
+  padding: initial !important;
+  background-color: #edecec !important; }
+
+html:not(.toni) .page-edit-blob pre, html:not(.toni) .CodeMirror pre {
+  color: initial !important;
+  background-color: initial !important;
+  padding: initial !important;
+  border-radius: initial !important;
+  border: initial !important; }
+
+html:not(.toni) ytd-app {
+  font-size: 110% !important;
+  background-color: #272727 !important; }
+  html:not(.toni) ytd-app a#video-title.yt-simple-endpoint.style-scope.ytd-grid-video-renderer {
+    font-weight: 700 !important; }
+  html:not(.toni) ytd-app div#metadata-container.grid.style-scope.ytd-grid-video-renderer {
+    font-weight: 500 !important; }
+
+html:not(.toni) #content.content-container, html:not(.toni) .Main-content, html:not(.toni) .site-content.container, html:not(.toni) .singleton {
+  max-width: 650px !important;
+  margin: auto !important;
+  padding: 1em !important;
+  letter-spacing: initial !important; }
+
+html:not(.toni) #mastheadbackground {
+  height: 185px !important;
+  margin-bottom: -185px !important; }
+
+html:not(.toni) .all-site-wrap pre code {
+  padding-top: 2rem !important;
+  background-color: initial !important; }
+
+html:not(.toni) #kottke-org {
+  font-size: 200% !important; }
+
+html:not(.toni) .text-container {
+  text-align: center; }
+
+html:not(.toni) body > pre {
+  font-size: 65% !important;
+  background-color: initial !important;
+  padding: 0.5em !important;
+  border: initial !important;
+  border-radius: none !important;
+  -moz-tab-size: 2 !important;
+    -o-tab-size: 2 !important;
+       tab-size: 2 !important; }

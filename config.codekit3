@@ -9,20 +9,6 @@
 	],
 "creatorBuild": "26330",
 "files": {
-	"\/.sass-cache\/1becaaf9fc35cc58ee1645a6a156f5f31f60a5dd\/custom.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.sass-cache\/1becaaf9fc35cc58ee1645a6a156f5f31f60a5dd\/custom.sassc",
-		"oF": 0
-		},
-	"\/.sass-cache\/4bef20138ce379a79e0d2cca7b8d0b164bf8687e\/custom.sassc": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/.sass-cache\/4bef20138ce379a79e0d2cca7b8d0b164bf8687e\/custom.sassc",
-		"oF": 0
-		},
 	"\/custom.css": {
 		"aP": 1,
 		"bl": 0,
@@ -34,8 +20,8 @@
 		"oS": 3
 		},
 	"\/custom.sass": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 2,
@@ -43,8 +29,8 @@
 		"oA": 0,
 		"oAP": "\/custom.css",
 		"oF": 0,
-		"oS": 3,
-		"uL": 0
+		"oS": 0,
+		"uL": 1
 		},
 	"\/LICENSE": {
 		"cB": 0,
