@@ -1,0 +1,131 @@
+///////////////////////////////////
+// TheSaneSafariCustomStyleSheet //
+///////////////////////////////////
+
+// Variables
+// Color for <code> and <pre>
+$lighterGray: lighten(black, 25%)
+// Background color for <code>
+$lightGray: lighten(lightgray, 10%)
+// Border color for <pre> and <code>
+$darkGray: darken(lightgray, 3%)
+// Background color of YouTube
+$darkerGray: darken(gray, 35%)
+
+// I added a class of `toni` to all of the websites I administer, so that I could exclude them from this custom style sheet
+html:not(.toni)
+  // I find that it's necessary to also style <table>'s because if a website is still using <table>'s, their styles probably suck big A as well
+  body, table
+    // No font fallbacks here because if you're using Safari on a Mac, you have Avenir
+    font-family: Avenir !important
+    font-weight: 500 !important
+    font-size: 1.1em !important
+    line-height: 1.6 !important
+    text-transform: none !important
+    text-align: initial !important
+    // Who would mess with this!?
+    letter-spacing: initial !important
+    color: initial !important
+
+  i, em
+    font-weight: 500 !important
+
+  b, strong
+    font-weight: 700 !important
+
+  // Because some websites are old AF
+  font
+    font-family: Avenir !important
+    font-weight: 500 !important
+    font-size: 1.1em !important
+
+  // I think I had to do this because of a specificity thing on certain websites
+  h1, h2, h3, h4, h5
+    font-family: Avenir Next !important
+    font-weight: 700 !important
+
+  // I probably could make a variable for the font stuff, but I'm too lazy to look that up
+  pre, code
+    // If you're not using H&Co's Operator typeface, you really should be. It's so perfect.
+    font-family: Operator Mono SSm, Monaco, monospace !important
+    font-size: 80% !important
+    color: $lighterGray !important
+    background-color: $lightGray !important
+    padding: 1em !important
+    border-radius: 0.4em !important
+    border: 0.1em solid $darkGray !important
+
+  code
+    padding: 0.15em !important
+
+  // Yes, I have to have this to prevent the <code> within <pre> from having double styling wonkiness
+  pre code,
+  // Some websites put text that is literally semantically <code> into <span>'s for some reason, so that's why I had to do this
+  pre span, span span
+    border: none !important
+    padding: initial !important
+    background-color: $lightGray !important
+
+//////////////////////////
+// Site-specific things //
+//////////////////////////
+
+  // GitHub
+  .page-edit-blob, .CodeMirror
+    pre
+      color: initial !important
+      background-color: initial !important
+      padding: initial !important
+      border-radius: initial !important
+      border: initial !important
+
+  // YouTube.com
+  // This website is satan
+  // Look at this tag. What does it say about Google/YouTube that they can't even use an actual HTML5 tag?
+  ytd-app
+    font-size: 110% !important
+    background-color: $darkerGray !important
+
+    a#video-title.yt-simple-endpoint.style-scope.ytd-grid-video-renderer
+      font-weight: 700 !important
+
+    div#metadata-container.grid.style-scope.ytd-grid-video-renderer
+      font-weight: 500 !important
+
+  // Most Squarespace and/or Wordpress or other CMS's
+  #content.content-container, .Main-content, .site-content.container, .singleton
+    max-width: 650px !important
+    margin: auto !important
+    padding: 1em !important
+    // I can usually tell within two seconds whether a site is a Squarespace site, because for whatever reason, most Squarespace templates default to altering the freaking kerning of the typefaces. Who does this!?
+    letter-spacing: initial !important
+
+  // Marco.org
+  // Marco's brown masthead gets overwhelmed by the increased font size i'm applying to <body> elements
+  #mastheadbackground
+    height: 185px !important
+    margin-bottom: -185px !important
+
+  // CSS-Tricks
+  .all-site-wrap
+    // This is because CSS-Tricks uses those cool little <pre> labels for whatever type of code is featured in the <pre> block
+    pre code
+      padding-top: 2rem !important
+      background-color: initial !important
+
+  // Not sure why this is necessary, but it is
+  #kottke-org
+    font-size: 200% !important
+
+  // Built in Safari error page
+  .text-container
+    text-align: center
+
+  // Safari Plain Text page
+  body > pre
+    font-size: 65% !important
+    background-color: initial !important
+    padding: 0.5em !important
+    border: initial !important
+    border-radius: none !important
+    tab-size: 2 !important
