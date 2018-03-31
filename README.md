@@ -1,4 +1,4 @@
-# SafariCustomStyleSheet
+# TheSaneSafariCustomStyleSheet
 
 This is a repository for my custom stylesheet for desktop Safari on macOS.
 
