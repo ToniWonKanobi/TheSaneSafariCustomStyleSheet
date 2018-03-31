@@ -11,13 +11,18 @@ $lightGray: lighten(lightgray, 10%)
 $darkGray: darken(lightgray, 3%)
 // Background color of YouTube
 $darkerGray: darken(gray, 35%)
+// Sans
+$sans: Avenir
+// Monospace
+$monospace: Operator Mono SSm, Monaco, monospace
 
 // I added a class of `toni` to all of the websites I administer, so that I could exclude them from this custom style sheet
-html:not(.toni)
+// :not(.mac) is to exclude CodePen
+html:not(.toni):not(.mac)
   // I find that it's necessary to also style <table>'s because if a website is still using <table>'s, their styles probably suck big A as well
   body:not(.wrap):not(.settings.logged-in.not-team), table
     // No font fallbacks here because if you're using Safari on a Mac, you have Avenir
-    font-family: Avenir !important
+    font-family: $sans !important
     font-weight: 500 !important
     font-size: 1.1em !important
     line-height: 1.6 !important
@@ -35,19 +40,19 @@ html:not(.toni)
 
   // Because some websites are old AF
   font
-    font-family: Avenir !important
+    font-family: $sans !important
     font-weight: 500 !important
     font-size: 1.1em !important
 
   // I think I had to do this because of a specificity thing on certain websites
   h1, h2, h3, h4, h5
-    font-family: Avenir Next !important
+    font-family: $sans !important
     font-weight: 700 !important
 
   // I probably could make a variable for the font stuff, but I'm too lazy to look that up
   pre, code
     // If you're not using H&Co's Operator typeface, you really should be. It's so perfect.
-    font-family: Operator Mono SSm, Monaco, monospace !important
+    font-family: $monospace !important
     font-size: 80% !important
     color: $lighterGray !important
     background-color: $lightGray !important
@@ -72,6 +77,7 @@ html:not(.toni)
   // GitHub
   .page-edit-blob, .CodeMirror
     pre
+      font-family: $monospace
       color: initial !important
       background-color: initial !important
       padding: initial !important
@@ -122,7 +128,7 @@ html:not(.toni)
   // Safari Plain Text page
   body > pre
     font-size: 65% !important
-    background-color: initial !important
+    background-color: white !important
     padding: 0.5em !important
     border: initial !important
     border-radius: none !important

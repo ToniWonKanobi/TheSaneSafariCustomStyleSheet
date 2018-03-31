@@ -1,4 +1,4 @@
-html:not(.toni) body:not(.wrap):not(.settings.logged-in.not-team), html:not(.toni) table {
+html:not(.toni):not(.mac) body:not(.wrap):not(.settings.logged-in.not-team), html:not(.toni):not(.mac) table {
   font-family: Avenir !important;
   font-weight: 500 !important;
   font-size: 1.1em !important;
@@ -8,22 +8,22 @@ html:not(.toni) body:not(.wrap):not(.settings.logged-in.not-team), html:not(.ton
   letter-spacing: initial !important;
   color: initial !important; }
 
-html:not(.toni) i, html:not(.toni) em {
+html:not(.toni):not(.mac) i, html:not(.toni):not(.mac) em {
   font-weight: 500 !important; }
 
-html:not(.toni) b, html:not(.toni) strong {
+html:not(.toni):not(.mac) b, html:not(.toni):not(.mac) strong {
   font-weight: 700 !important; }
 
-html:not(.toni) font {
+html:not(.toni):not(.mac) font {
   font-family: Avenir !important;
   font-weight: 500 !important;
   font-size: 1.1em !important; }
 
-html:not(.toni) h1, html:not(.toni) h2, html:not(.toni) h3, html:not(.toni) h4, html:not(.toni) h5 {
-  font-family: Avenir Next !important;
+html:not(.toni):not(.mac) h1, html:not(.toni):not(.mac) h2, html:not(.toni):not(.mac) h3, html:not(.toni):not(.mac) h4, html:not(.toni):not(.mac) h5 {
+  font-family: Avenir !important;
   font-weight: 700 !important; }
 
-html:not(.toni) pre, html:not(.toni) code {
+html:not(.toni):not(.mac) pre, html:not(.toni):not(.mac) code {
   font-family: Operator Mono SSm, Monaco, monospace !important;
   font-size: 80% !important;
   color: #404040 !important;
@@ -35,54 +35,55 @@ html:not(.toni) pre, html:not(.toni) code {
     -o-tab-size: 2 !important;
        tab-size: 2 !important; }
 
-html:not(.toni) code {
+html:not(.toni):not(.mac) code {
   padding: 0.15em !important; }
 
-html:not(.toni) pre code,
-html:not(.toni) pre span,
-html:not(.toni) pre span > span {
+html:not(.toni):not(.mac) pre code,
+html:not(.toni):not(.mac) pre span,
+html:not(.toni):not(.mac) pre span > span {
   border: none !important;
   padding: initial !important;
   background-color: #edecec !important; }
 
-html:not(.toni) .page-edit-blob pre, html:not(.toni) .CodeMirror pre {
+html:not(.toni):not(.mac) .page-edit-blob pre, html:not(.toni):not(.mac) .CodeMirror pre {
+  font-family: Operator Mono SSm, Monaco, monospace;
   color: initial !important;
   background-color: initial !important;
   padding: initial !important;
   border-radius: initial !important;
   border: initial !important; }
 
-html:not(.toni) ytd-app {
+html:not(.toni):not(.mac) ytd-app {
   font-size: 110% !important;
   background-color: #272727 !important; }
-  html:not(.toni) ytd-app a#video-title.yt-simple-endpoint.style-scope.ytd-grid-video-renderer {
+  html:not(.toni):not(.mac) ytd-app a#video-title.yt-simple-endpoint.style-scope.ytd-grid-video-renderer {
     font-weight: 700 !important; }
-  html:not(.toni) ytd-app div#metadata-container.grid.style-scope.ytd-grid-video-renderer {
+  html:not(.toni):not(.mac) ytd-app div#metadata-container.grid.style-scope.ytd-grid-video-renderer {
     font-weight: 500 !important; }
 
-html:not(.toni) #content.content-container, html:not(.toni) .Main-content, html:not(.toni) .site-content.container, html:not(.toni) .singleton {
+html:not(.toni):not(.mac) #content.content-container, html:not(.toni):not(.mac) .Main-content, html:not(.toni):not(.mac) .site-content.container, html:not(.toni):not(.mac) .singleton {
   max-width: 650px !important;
   margin: auto !important;
   padding: 1em !important;
   letter-spacing: initial !important; }
 
-html:not(.toni) #mastheadbackground {
+html:not(.toni):not(.mac) #mastheadbackground {
   height: 185px !important;
   margin-bottom: -185px !important; }
 
-html:not(.toni) .all-site-wrap pre code {
+html:not(.toni):not(.mac) .all-site-wrap pre code {
   padding-top: 2rem !important;
   background-color: initial !important; }
 
-html:not(.toni) #kottke-org {
+html:not(.toni):not(.mac) #kottke-org {
   font-size: 200% !important; }
 
-html:not(.toni) .text-container {
+html:not(.toni):not(.mac) .text-container {
   text-align: center; }
 
-html:not(.toni) body > pre {
+html:not(.toni):not(.mac) body > pre {
   font-size: 65% !important;
-  background-color: initial !important;
+  background-color: white !important;
   padding: 0.5em !important;
   border: initial !important;
   border-radius: none !important;
