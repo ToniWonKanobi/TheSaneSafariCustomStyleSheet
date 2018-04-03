@@ -14,13 +14,13 @@ $darkerGray: darken(gray, 35%)
 // Sans
 $sans: Avenir
 // Monospace
-$monospace: Operator Mono SSm, Monaco, monospace
+$monospace: Operator Mono SSm, Monaco
 
 // I added a class of `toni` to all of the websites I administer, so that I could exclude them from this custom style sheet
 // :not(.mac) is to exclude CodePen
-html:not(.toni):not(.mac)
+html:not(.toni)
   // I find that it's necessary to also style <table>'s because if a website is still using <table>'s, their styles probably suck big A as well
-  body:not(.wrap):not(.settings.logged-in.not-team), table
+  body:not(.wrap):not(.safari_mode):not(.tisa_mode), table, .body
     // No font fallbacks here because if you're using Safari on a Mac, you have Avenir
     font-family: $sans !important
     font-weight: 500 !important
@@ -77,7 +77,7 @@ html:not(.toni):not(.mac)
   // GitHub
   .page-edit-blob, .CodeMirror
     pre
-      font-family: $monospace
+      font-family: $monospace !important
       color: initial !important
       background-color: initial !important
       padding: initial !important
@@ -123,7 +123,7 @@ html:not(.toni):not(.mac)
 
   // Built in Safari error page
   .text-container
-    text-align: center
+    text-align: center !important
 
   // Safari Plain Text page
   body > pre
