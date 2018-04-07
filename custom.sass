@@ -20,7 +20,7 @@ $monospace: Operator Mono SSm, Monaco
 // :not(.mac) is to exclude CodePen
 html:not(.toni)
   // I find that it's necessary to also style <table>'s because if a website is still using <table>'s, their styles probably suck big A as well
-  body:not(.wrap):not(.safari_mode):not(.tisa_mode), table, .body
+  body:not(.wrap):not(.safari_mode):not(.tisa_mode):not(.htmlOn-cssOn-jsOn), table, .body
     // No font fallbacks here because if you're using Safari on a Mac, you have Avenir
     font-family: $sans !important
     font-weight: 500 !important
@@ -30,13 +30,15 @@ html:not(.toni)
     text-align: initial !important
     // Who would mess with this!?
     letter-spacing: initial !important
-    color: initial !important
 
   i, em
     font-weight: 500 !important
 
   b, strong
     font-weight: 700 !important
+
+    & i, em
+      font-weight: 700 !important
 
   // Because some websites are old AF
   font
@@ -49,8 +51,15 @@ html:not(.toni)
     font-family: $sans !important
     font-weight: 700 !important
 
+    & i, em
+      font-weight: inherit !important
+
+  img
+    max-width: 100% !important
+
   // I probably could make a variable for the font stuff, but I'm too lazy to look that up
-  pre, code
+  // *Not* CodePen
+  pre:not(.CodeMirror-line), code
     // If you're not using H&Co's Operator typeface, you really should be. It's so perfect.
     font-family: $monospace !important
     font-size: 80% !important
@@ -71,11 +80,11 @@ html:not(.toni)
   pre span > span
     border: none !important
     padding: initial !important
-    background-color: $lightGray !important
+    background-color: initial !important
 
   // Site-specific things 
   // GitHub
-  .page-edit-blob, .CodeMirror
+  .page-edit-blob
     pre
       font-family: $monospace !important
       color: initial !important
@@ -83,6 +92,10 @@ html:not(.toni)
       padding: initial !important
       border-radius: initial !important
       border: initial !important
+
+  // Twitter
+  // body[class^="user-style-"]
+    // font-family: Avenir !important
 
   // YouTube.com
   // This website is satan
@@ -96,14 +109,6 @@ html:not(.toni)
 
     div#metadata-container.grid.style-scope.ytd-grid-video-renderer
       font-weight: 500 !important
-
-  // Most Squarespace and/or Wordpress or other CMS's
-  #content.content-container, .Main-content, .site-content.container, .singleton
-    max-width: 650px !important
-    margin: auto !important
-    padding: 1em !important
-    // I can usually tell within two seconds whether a site is a Squarespace site, because for whatever reason, most Squarespace templates default to altering the freaking kerning of the typefaces. Who does this!?
-    letter-spacing: initial !important
 
   // Marco.org
   // Marco's brown masthead gets overwhelmed by the increased font size i'm applying to <body> elements
@@ -126,8 +131,9 @@ html:not(.toni)
     text-align: center !important
 
   // Safari Plain Text page
-  body > pre
-    font-size: 65% !important
+  // Not sure how much more specific I can get here
+  pre:only-child
+    font-size: 60% !important
     background-color: white !important
     padding: 0.5em !important
     border: initial !important
